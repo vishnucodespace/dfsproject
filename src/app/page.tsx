@@ -1294,6 +1294,12 @@ export default function Home() {
     literacy, and structured learning for investors and traders.
   </p>
 </section>
+<h2>About Deepam Finance</h2>
+
+<p>
+Deepam Finance is a financial education and stock market training institute
+focused on investing, technical analysis, options trading and wealth creation.
+</p>
     </div>
   );
 }
