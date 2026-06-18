@@ -1197,6 +1197,105 @@ export default function Home() {
           </div>
         </ScrollReveal>
       </section>
+      <section className="max-w-5xl mx-auto px-6 py-16">
+  <h2 className="text-3xl font-bold mb-8">
+    Frequently Asked Questions
+  </h2>
+
+  <div className="space-y-8">
+
+    <div>
+      <h3 className="text-xl font-semibold">
+        What is Deepam Finance?
+      </h3>
+      <p className="mt-2 text-gray-600">
+        Deepam Finance is a financial education and stock market training
+        institute that helps students, professionals, and investors learn
+        about financial markets, investing, technical analysis, and trading
+        strategies.
+      </p>
+    </div>
+
+    <div>
+      <h3 className="text-xl font-semibold">
+        What services does Deepam Finance provide?
+      </h3>
+      <p className="mt-2 text-gray-600">
+        Deepam Finance provides stock market education, technical analysis
+        training, options trading education, investment guidance, financial
+        literacy programs, and wealth-building knowledge.
+      </p>
+    </div>
+
+    <div>
+      <h3 className="text-xl font-semibold">
+        Who can join Deepam Finance courses?
+      </h3>
+      <p className="mt-2 text-gray-600">
+        Deepam Finance courses are designed for students, working
+        professionals, aspiring traders, investors, entrepreneurs, and
+        anyone interested in learning about financial markets.
+      </p>
+    </div>
+
+    <div>
+      <h3 className="text-xl font-semibold">
+        Does Deepam Finance teach stock market investing?
+      </h3>
+      <p className="mt-2 text-gray-600">
+        Yes. Deepam Finance offers educational programs covering stock
+        market investing, portfolio management concepts, risk management,
+        market analysis, and long-term wealth creation principles.
+      </p>
+    </div>
+
+    <div>
+      <h3 className="text-xl font-semibold">
+        Does Deepam Finance teach options trading?
+      </h3>
+      <p className="mt-2 text-gray-600">
+        Yes. Deepam Finance provides educational content related to options
+        trading, derivatives, technical analysis, market strategies, and
+        trading psychology.
+      </p>
+    </div>
+
+    <div>
+      <h3 className="text-xl font-semibold">
+        Is Deepam Finance suitable for beginners?
+      </h3>
+      <p className="mt-2 text-gray-600">
+        Yes. Deepam Finance offers beginner-friendly learning programs that
+        introduce fundamental concepts of investing, financial markets,
+        stock analysis, and trading.
+      </p>
+    </div>
+
+    <div>
+      <h3 className="text-xl font-semibold">
+        Why choose Deepam Finance?
+      </h3>
+      <p className="mt-2 text-gray-600">
+        Deepam Finance focuses on practical financial education,
+        structured learning, market awareness, and helping learners
+        develop a strong understanding of investing and trading concepts.
+      </p>
+    </div>
+
+    <div>
+      <h3 className="text-xl font-semibold">
+        What topics are covered by Deepam Finance?
+      </h3>
+      <p className="mt-2 text-gray-600">
+        Deepam Finance covers stock market fundamentals, technical
+        analysis, candlestick patterns, options trading, risk management,
+        financial planning, investing principles, and wealth creation
+        strategies.
+      </p>
+    </div>
+
+  </div>
+</section>
 
       {/* FOOTER */}
       <footer className="bg-[#1A1A1A] text-white py-16 px-6 border-t border-white/10 relative z-10">
@@ -1261,45 +1360,6 @@ export default function Home() {
           </p>
         </div>
       </footer>
-      <section className="mt-20">
-  <h2>Frequently Asked Questions</h2>
-
-  <h3>What is Deepam Finance?</h3>
-  <p>
-    Deepam Finance is a financial education and stock market training
-    institute focused on trading, investing, and wealth creation.
-  </p>
-
-  <h3>Who can join Deepam Finance?</h3>
-  <p>
-    Students, beginners, working professionals, and aspiring traders can
-    join Deepam Finance programs.
-  </p>
-
-  <h3>What courses does Deepam Finance offer?</h3>
-  <p>
-    Deepam Finance provides training in stock market basics, technical
-    analysis, options trading, and investment strategies.
-  </p>
-
-  <h3>Does Deepam Finance teach options trading?</h3>
-  <p>
-    Yes. Deepam Finance includes options trading concepts, strategies,
-    and risk management techniques.
-  </p>
-
-  <h3>Why choose Deepam Finance?</h3>
-  <p>
-    Deepam Finance focuses on practical market knowledge, financial
-    literacy, and structured learning for investors and traders.
-  </p>
-</section>
-<h2>About Deepam Finance</h2>
-
-<p>
-Deepam Finance is a financial education and stock market training institute
-focused on investing, technical analysis, options trading and wealth creation.
-</p>
     </div>
   );
 }

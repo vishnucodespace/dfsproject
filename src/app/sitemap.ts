@@ -3,7 +3,7 @@ import { MetadataRoute } from "next";
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
     {
-      url: "https://YOUR-VERCEL-URL.vercel.app",
+      url: "https://deepamfinancialservices.vercel.app",
       lastModified: new Date(),
     },
   ];
