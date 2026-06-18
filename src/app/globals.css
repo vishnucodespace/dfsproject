@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+@import "tailwindcss";
+
+:root {
+  --background: #FCFCFA; /* Warm White */
+  --background-soft: #F8F7F4; /* Secondary Background */
+  --background-section: #FCFCFA;
+  --foreground: #1A1A1A; /* Primary Text */
+  
+  --primary: #E86E2D; /* Logo Orange */
+  --secondary: #2B8EA6; /* Logo Teal */
+  
+  --text-primary: #1A1A1A;
+  --text-secondary: #5F6368;
+  --text-muted: #8E918F;
+  --border-color: #ECE8E1; /* Soft Borders */
+  
+  --highlight-bg: #FFF4EC;
+  --success-accent: #4F8A5B;
+  
+  --font-serif: 'Playfair Display', Georgia, serif;
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+@theme {
+  --color-primary: var(--primary);
+  --color-secondary: var(--secondary);
+  --color-text-primary: var(--text-primary);
+  --color-text-secondary: var(--text-secondary);
+  --color-text-muted: var(--text-muted);
+  --color-border-custom: var(--border-color);
+  --color-highlight-bg: var(--highlight-bg);
+  --color-success-accent: var(--success-accent);
+  
+  --font-serif: var(--font-serif);
+  --font-sans: var(--font-sans);
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, .font-serif {
+  font-family: var(--font-serif);
+}
+
+/* Background grid utility */
+.bg-grid-pattern {
+  background-size: 40px 40px;
+  background-image: radial-gradient(circle, rgba(26, 26, 26, 0.03) 1px, transparent 1px);
+}
+
+/* Growing underline from center for links */
+.link-grow {
+  position: relative;
+}
+.link-grow::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 1.5px;
+  bottom: -3px;
+  left: 0;
+  background-color: var(--primary);
+  transform-origin: bottom center;
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.link-grow:hover::after {
+  transform: scaleX(1);
+}
+
+/* Minimal card & shadow systems */
+.premium-card {
+  background: #FFFFFF;
+  border: 1px solid var(--border-color);
+  box-shadow: 0 4px 20px -2px rgba(26, 26, 26, 0.015);
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Custom minimal scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--background-soft);
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(26, 26, 26, 0.06);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary);
+}
+
+/* Smooth scroll Lenis integration */
+html.lenis, html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-scrolling iframe {
+  pointer-events: none;
+}
+
+/* Elite Course pulse animation */
+@keyframes border-accent-pulse {
+  0%, 100% { border-color: rgba(232, 110, 45, 0.4); box-shadow: 0 4px 15px rgba(232, 110, 45, 0.03); }
+  50% { border-color: rgba(232, 110, 45, 0.8); box-shadow: 0 4px 20px rgba(232, 110, 45, 0.1); }
+}
+.featured-border-pulse {
+  animation: border-accent-pulse 3.5s infinite alternate cubic-bezier(0.4, 0, 0.2, 1);
+}
